@@ -22,3 +22,10 @@ navContainer.addEventListener("mouseenter", () => header.style.opacity = "1");
 const adventureAwaits = document.querySelectorAll('.text-content h2')
 adventureAwaits.forEach(node => {node.addEventListener('mousemove', (e) => {e.target.style.color = 'Maroon'})});
 
+const button = document.querySelectorAll('.btn');
+button.forEach(node => {node.addEventListener('dblclick', function(){let name = prompt('Enter name'); alert(`${name} you are signed up!`);})});
+
+footer = document.querySelector('.footer');
+footer.addEventListener('contextmenu', (e) => {e.target.style.backgroundColor = 'MediumTurquoise';})
+
+nav.addEventListener('click', (e) => {e.preventDefault(); console.log("clicked on navlink");}); 
